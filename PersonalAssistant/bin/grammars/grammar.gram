@@ -1,0 +1,16 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar 
+ */
+
+grammar grammar;
+
+public <greetings>  = ( hi jarvis);
+public <commands> =( schedule | get time | get date | jarvis | show me my homework for monday | show me my homework for tuesday | 
+show me my homework for wednesday | show me my homework for thursday | what should a human never do | 
+show me my homework for this week | set homework | set word);
+public <voices>  = ( change to voice one  | change to voice two | change to voice three );
+public <amazing>  = ( say amazing | what day is today );
+                  
+public <syntax> = <number>{1} (plus | minus | multiply | division){1} <number>{1}; 
